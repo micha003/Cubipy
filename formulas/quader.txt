@@ -1,0 +1,7 @@
+a       b       c
+länge; höhe; tiefe
+
+volumina: a*b*c
+oberflächeninhalt: 2*(a*b+aa*b+b*c)
+Grundfläche: a*b
+diagonale: sqrt(a^2+b^2+c^2)
