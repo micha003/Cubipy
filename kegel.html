@@ -2,29 +2,29 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Cubipy - Quader</title>
+    <title>Cubipy - Kegel</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Quader</h1>
-
+    <h1>Kegel</h1>
     <!-- 
     TODO: Infotext hinzufügen
     TODO: formatieren
     TODO: Bildchen einfügen
     -->
 
-    <input type="number" id="length" placeholder="a">
-    <input type="number" id="width" placeholder="b">
-    <input type="number" id="height" placeholder="c">
+    <input type="number" id="mantellinie" placeholder="s">
+    <input type="number" id="diameter" placeholder="d">
+    <input type="number" id="height" placeholder="h">
 
     <button onclick="calculate()">Berechnen</button>
 
     <div id="result">
         <p id="volumen">Volumen</p>
         <p id="OA">Oberflächeninhalt</p>
-        <p id="diagonal">Raumdiagonale</p>
     </div>
-
-    <script src="script_quader.js"></script>
+    
+    <script src="script_kegel.js"></script>
 </body>
 </html>
