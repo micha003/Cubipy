@@ -11,14 +11,25 @@ body {
   overflow: hidden;
 }
 
+div#body {
+  border: 3px solid black;
+  padding: 10px;
+  padding-top: 5px;
+  border-radius: 50px;
+}
+
 h1 {
   text-decoration: underline;
+}
+
+p#introText {
+  font-size: 18px;
 }
 
 ul {
   list-style-type: none;
   padding: 20px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 li {
@@ -27,13 +38,13 @@ li {
   border: 1px solid black;
 }
 
+li:hover {
+  background: white;
+}
+
 a {
   text-decoration: none;
   color: black;
-}
-
-a:hover {
-  color: #a10b0b;
 }
 
 input {
@@ -41,7 +52,6 @@ input {
   font-size: 18px;
   border: 1px solid black;
 }
-
 
 div#result {
   margin-top: 20px;

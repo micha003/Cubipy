@@ -20,7 +20,9 @@ function calculateDiagonal() {
   var length = document.getElementById("length").value;
   var width = document.getElementById("width").value;
   var height = document.getElementById("height").value;
-  var diagonal = Math.sqrt(length * length + width * width + height * height);
+  var diagonal = Math.round(
+    Math.sqrt(length * length + width * width + height * height)
+  );
   document.getElementById("diagonal").innerHTML =
     "Diagonale: " + String(diagonal) + " cm";
 }
