@@ -3,7 +3,8 @@ function calculateVolumen() {
   var width = document.getElementById("width").value;
   var height = document.getElementById("height").value;
   var volumen = length * width * height;
-  document.getElementById("volumen").value = "Volumen: " + String(volumen) + " cm³";
+  document.getElementById("volumen").innerHTML =
+    "Volumen: " + String(volumen) + " cm³";
 }
 
 function calculateSurface() {
@@ -11,7 +12,8 @@ function calculateSurface() {
   var width = document.getElementById("width").value;
   var height = document.getElementById("height").value;
   var OA = 2 * (length * width + length * height + width * height);
-  document.getElementById("OA").value = "Oberfläche: " + String(OA) + " cm²";
+  document.getElementById("OA").innerHTML =
+    "Oberfläche: " + String(OA) + " cm²";
 }
 
 function calculateDiagonal() {
@@ -19,7 +21,8 @@ function calculateDiagonal() {
   var width = document.getElementById("width").value;
   var height = document.getElementById("height").value;
   var diagonal = Math.sqrt(length * length + width * width + height * height);
-  document.getElementById("diagonal").value = "Diagonale: " + String(diagonal) + " cm";
+  document.getElementById("diagonal").innerHTML =
+    "Diagonale: " + String(diagonal) + " cm";
 }
 
 function calculate() {

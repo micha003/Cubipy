@@ -1,4 +1,61 @@
 html {
   height: 100%;
   width: 100%;
+  text-align: center;
+}
+
+body {
+  background-color: lightseagreen;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 20px;
+  font-size: 18px;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #a10b0b;
+}
+
+input {
+  padding: 5 px;
+  font-size: 18px;
+  border: 1px solid black;
+}
+
+
+div#result {
+  margin-top: 20px;
+  font-size: 18px;
+  border: 1px solid black;
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+a#home {
+  text-decoration: none;
+  padding: 12px;
+  font-size: 18px;
+  color: magenta;
+  border: 1px solid black;
+  background: black;
 }
