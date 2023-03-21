@@ -2,15 +2,33 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <title>Cubipy - Quader</title>
     <link rel="stylesheet" href="style.css">
-    <title>Körperberechnung Quader</title>
 </head>
 <body>
-    <h1>Körperberechnung Quader</h1>
+    <h1>Quader</h1>
 
-    <!--TODO: kleinen Infotext schreiben -->
-    <input type="text" name="var_a">
-    <input type="text" name="">
-    <script src="script.js"></script>
+    <!-- 
+    TODO: Infotext hinzufügen
+    TODO: formatieren
+    TODO: Bildchen einfügen
+    -->
+
+    <input type="number" id="length" placeholder="a">
+    <input type="number" id="width" placeholder="b">
+    <input type="number" id="height" placeholder="c">
+
+    <button onclick="calculate()">Berechnen</button>
+
+    <div id="result">
+        <p id="volumen">Volumen</p>
+        <p id="OA">Oberflächeninhalt</p>
+        <p id="diagonal">Raumdiagonale</p>
+    </div>
+
+    <a href="index.html" id="home">Home</a>
+
+    <script src="script_quader.js"></script>
 </body>
+
 </html>
