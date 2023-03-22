@@ -1,4 +1,3 @@
-
 # Cubipy - Online Körperrechner - Projekt im Informatikunterricht
 
 **Aktuell verfügbare Körper:**
@@ -7,10 +6,10 @@
 - Kegel
 - Kugel
 - Zylinder
+- Würfel
 
 **In Planung:**
 
-- Würfel
 - Pyramide
 - Prisma
 
