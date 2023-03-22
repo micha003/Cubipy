@@ -1,5 +1,0 @@
-r     
-radius
-
-Volumen: 4/3*pi*r^3
-oberflächeninhalt: 4*pi*r^2
