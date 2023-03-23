@@ -8,6 +8,7 @@ body {
   background-color: lightseagreen;
   height: 100%;
   width: 100%;
+  overflow: hidden-scroll;
 }
 
 div#body {
@@ -25,6 +26,13 @@ p#introText {
   font-size: 18px;
 }
 
+hr {
+  width: 50%;
+  height: 2px;
+  background: black;
+  border: black;
+}
+
 ul {
   list-style-type: none;
   padding: 20px;
@@ -32,9 +40,10 @@ ul {
 }
 
 li {
-  display: block;
+  display: inline-block;
   padding: 10px;
   border: 1px solid black;
+  margin: 2px;
 }
 
 li:hover {
