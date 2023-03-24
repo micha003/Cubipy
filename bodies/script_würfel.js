@@ -24,4 +24,5 @@ function calculateDiagonal() {
 function calculate() {
   calculateVolumen();
   calculateSurface();
+  calculateDiagonal();
 }
