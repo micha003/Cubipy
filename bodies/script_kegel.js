@@ -4,9 +4,9 @@ function calculateVolumen() {
   var radius = document.getElementById("diameter").value / 2;
   var height = document.getElementById("height").value;
 
-  var volumen = Math.round((Math.PI * radius * radius * height) / 3);
+  var volumen = (Math.PI * radius * radius * height) / 3;
   document.getElementById("volumen").innerHTML =
-    "Volumen: " + String(volumen) + " cm³";
+    "Volumen: " + String(volumen.toPrecision(3)) + " cm³";
 }
 
 function calculateSurface() {
@@ -15,7 +15,7 @@ function calculateSurface() {
 
   var OA = Math.round(Math.PI * radius * (radius + mantellinie));
   document.getElementById("OA").innerHTML =
-    "Oberfläche: " + String(OA) + " cm²";
+    "Oberfläche: " + String(OA.toPrecision(3)) + " cm²";
 }
 
 function calculate() {

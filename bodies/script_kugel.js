@@ -3,7 +3,7 @@ function calculateVolumen() {
 
   var volumen = Math.round((4 / 3) * Math.PI * radius ** 3);
   document.getElementById("volumen").innerHTML =
-    "Volumen " + String(volumen) + "cm³";
+    "Volumen: " + String(volumen.toPrecision(3)) + "cm³";
 }
 
 function calculateSurface() {
@@ -11,7 +11,7 @@ function calculateSurface() {
 
   var OA = Math.round(4 * Math.PI * radius ** 2);
   document.getElementById("OA").innerHTML =
-    "Oberflächeninhalt " + String(OA) + "cm²";
+    "Oberflächeninhalt: " + String(OA.toPrecision(3)) + "cm²";
 }
 
 function calculate() {
