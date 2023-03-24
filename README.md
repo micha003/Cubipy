@@ -1,4 +1,3 @@
-
 # Cubipy - Online Körperrechner - Projekt im Informatikunterricht
 
 **Aktuell verfügbare Körper:**
@@ -7,10 +6,10 @@
 - Kegel
 - Kugel
 - Zylinder
+- Würfel
 
 **In Planung:**
 
-- Würfel
 - Pyramide
 - Prisma
 
@@ -23,7 +22,7 @@ Die Dateien _.replit_ und _replit.nix_ können ignoriert werden, weil sie nicht 
 ### TODOS
 
 - [ ] Infotexte einfügen
-- [ ] Bilder zu den Infotexten einfügen
-- [ ] mehr Körper implementieren
-- [ ] neue Ideen für ein Design kreieren
+- [x] Bilder zu den Infotexten einfügen
+- [x] mehr Körper implementieren
+- [ ] sollen nun gerundete oder ungerundete Ergebnisse angezeigt werden?
 - [ ] das Programm um mehr als nur Körper erweitern (Arbeit mit Issues / PR's auf Github?)
