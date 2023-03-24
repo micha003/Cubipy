@@ -22,8 +22,7 @@ Die Dateien _.replit_ und _replit.nix_ können ignoriert werden, weil sie nicht 
 ### TODOS
 
 - [ ] Infotexte einfügen
-- [ ] Bilder zu den Infotexten einfügen
-- [ ] mehr Körper implementieren
+- [x] Bilder zu den Infotexten einfügen
+- [x] mehr Körper implementieren
 - [ ] sollen nun gerundete oder ungerundete Ergebnisse angezeigt werden?
-- [ ] neue Ideen für ein Design kreieren
 - [ ] das Programm um mehr als nur Körper erweitern (Arbeit mit Issues / PR's auf Github?)
