@@ -1,32 +1,36 @@
-function calculateVolumen() {
-  var length = document.getElementById("length").value;
-  var width = document.getElementById("width").value;
-  var height = document.getElementById("height").value;
-  var volumen = length * width * height;
-  document.getElementById("volumen").innerHTML =
-    "Volumen: " + String(volumen.toPrecision(3)) + " cm³";
-}
+function getInputFields() {
+  const allInputFields = document.getElementsByTagName("input");
+  let eIF1 = [],
+    fIF1 = [];
 
-function calculateSurface() {
-  var length = document.getElementById("length").value;
-  var width = document.getElementById("width").value;
-  var height = document.getElementById("height").value;
-  var OA = 2 * (length * width + length * height + width * height);
-  document.getElementById("OA").innerHTML =
-    "Oberfläche: " + String(OA.toPrecision(3)) + " cm²";
-}
+  let eIF2 = [],
+    fIF2 = [];
 
-function calculateDiagonal() {
-  var length = document.getElementById("length").value;
-  var width = document.getElementById("width").value;
-  var height = document.getElementById("height").value;
-  var diagonal = Math.sqrt(length * length + width * width + height * height);
-  document.getElementById("diagonal").innerHTML =
-    "Diagonale: " + String(diagonal.toPrecision(3)) + " cm";
+  for (let i = 0; i < allInputFields.length; i++) {
+    if (allInputFields[i].value === "" && i <= 2) {
+      eIF1.push(allInputFields[i]);
+    } else if (i <= 2) {
+      fIF1.push(allInputFields[i]);
+    } else if (allInputFields[i].value === "" && i > 2) {
+      eIF2.push(allInputFields[i]);
+    } else {
+      fIF2.push(allInputFields[i]);
+    }
+  }
+
+  return { eIF1, fIF1, eIF2, fIF2 };
 }
 
 function calculate() {
-  calculateVolumen();
-  calculateSurface();
-  calculateDiagonal();
+  const { eIF1, fIF1, eIF2, fIF2 } = getInputFields();
+
+  if (eIF1.length > fIF1.length) {
+    alert("Bitte füllen Sie mind. zwei der folgenden Felder aus: a, b, c");
+  } else {
+  }
+
+  if (eIF2.length > fIF2.length) {
+    alert("Bitte füllen Sie mind. eins der folgenden Felder aus: V, OA, d");
+  } else {
+  }
 }
