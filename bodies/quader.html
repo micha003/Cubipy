@@ -12,25 +12,45 @@
     TODO: Infotext hinzufügen
     -->
 
-    <img src="quader.png" alt="Quader" style="width: 350px; margin-bottom: 10px;">
+    <img src="img/quader.png" alt="Quader" style="width: 350px; margin-bottom: 10px;">
 
     <br>
+    
+    <div id="inputfields">
+        <input type="number" id="a" class="checkbox" placeholder="a">
+        <label for="a">Seite a</label>
 
-    <input type="number" id="length" placeholder="a">
-    <input type="number" id="width" placeholder="b">
-    <input type="number" id="height" placeholder="c">
+        <br>
 
-    <button onclick="calculate()">Berechnen</button>
+        <input type="number" id="b" class="checkbox" placeholder="b">
+        <label for="b">Seite b</label>
 
-    <div id="result">
-        <p id="volumen">Volumen</p>
-        <p id="OA">Oberflächeninhalt</p>
-        <p id="diagonal">Raumdiagonale</p>
+        <br>
+
+        <input type="number" id="c" class="checkbox" placeholder="c">
+        <label for="c">Seite c</label>
+
+        <br>
+
+        <input type="number" id="v" class="checkbox" placeholder="V">
+        <label for="v">Volumen</label>
+
+        <br>
+
+        <input type="number" id="o" class="checkbox" placeholder="OA">
+        <label for="o">Oberflächeninhalt</label>
+
+        <br>
+
+        <input type="number" id="d" class="checkbox" placeholder="d">
+        <label for="d">Raumdiagonale</label>
+
+        <button id="checkbox" onclick="calculate()">Eingaben bestätigen</button>
     </div>
 
     <a href="../index.html" id="home">Home</a>
 
-    <script src="script_quader.js"></script>
+    <script src="js/script_quader.js"></script>
 </body>
 
 </html>

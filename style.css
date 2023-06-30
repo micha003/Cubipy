@@ -64,9 +64,29 @@ input {
   border: 1px solid black;
   border-radius: 5px;
   /* make the input boxes bigger */
+  width: 50px;
+  height: 22px;
+  font-size: 18px;
+  margin: 2px;
+}
+
+div#inputfields {
+  margin-top: 20px;
+  font-size: 18px;
+  border: 1px solid black;
+  text-align: left;
+}
+
+button#checkbox {
+  padding: 5 px;
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 5px;
+  /* make the input boxes bigger */
   width: 250px;
   height: 30px;
   font-size: 18px;
+  margin: 2px;
 }
 
 div#result {
